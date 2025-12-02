@@ -17,7 +17,7 @@ It is a small web application to visualize the product performance by a company.
 
 ```bash
 cd backend
-npm Install
+npm install
 ```
 Create a .env file:
 ```ini

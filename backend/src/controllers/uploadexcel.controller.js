@@ -14,7 +14,7 @@ export const exceltoJson=async(req,res)=>{
         const newData = jsonData.map((data) => ({
           "Product Name": data["Product Name"],
           "Category": data["Category"],
-          "Quantity": data["Quantity"],
+          "Quantity Sold": data["Quantity Sold"],
           "Revenue": data["Revenue"],
           "Sales Date": excelDateToJSDate(data["Sales Date"]),
         }));

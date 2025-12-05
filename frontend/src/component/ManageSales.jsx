@@ -89,7 +89,7 @@ const handleAddSave = async () => {
   <div key={index} className="grid grid-cols-6 py-3 px-6 shadow-sm">
     <p>{data["Product Name"]}</p>
     <p>{data.Category}</p>
-    <p>{data.Quantity}</p>
+    <p>{data["Quantity Sold"]}</p>
     <p>{data.Revenue}</p>
     <p>{data["Sales Date"]}</p>
        <div className="flex items-center gap-2">
@@ -134,9 +134,9 @@ const handleAddSave = async () => {
         <input
           className="border p-1 rounded"
           type="number"
-          value={editingData.Quantity}
+          value={editingData["Quantity Sold"]}
           onChange={(e) =>
-            setEditingData({ ...editingData, Quantity: e.target.value })
+            setEditingData({ ...editingData, "Quantity Sold": e.target.value })
           }
         />
         <input
@@ -209,9 +209,9 @@ const handleAddSave = async () => {
         <input
           className="border p-1 rounded"
           type="number"
-          value={addingData.Quantity}
+          value={addingData["Quantity Sold"]}
           onChange={(e) =>
-            setAddingData({ ...addingData, Quantity: e.target.value })
+            setAddingData({ ...addingData, "Quantity Sold": e.target.value })
           }
         />
         <input

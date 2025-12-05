@@ -18,7 +18,7 @@ export function BarChart() {
     datasets: [
       {
         label: "Quantity Sold",
-        data: data.map((d) => d.Quantity),
+        data: data.map((d) => d["Quantity Sold"]),
         backgroundColor: [
           'rgba(255,99,132,0.5)',
           'rgba(54,162,235,0.5)',
